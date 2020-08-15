@@ -5,7 +5,7 @@ function CitySearch() {
     var searchValue = $("#SearchBox").val()
     console.log(searchValue)
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&units=imperial&appid=b0b733324ac9a7ea30d814fbb41a75d7";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&units=imperial&appid=b0b733324ac9a7ea30d814fbb41a75d7";
 
     $.ajax({
         url: queryURL,
