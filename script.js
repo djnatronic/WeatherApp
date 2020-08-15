@@ -43,7 +43,7 @@ function GetUV(x, y) {
     console.log("start GetUV")
     console.log(x)
     console.log(y)
-    var queryURL = "http://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + x + "&lon=" + y + "&appid=b0b733324ac9a7ea30d814fbb41a75d7";
+    var queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + x + "&lon=" + y + "&appid=b0b733324ac9a7ea30d814fbb41a75d7";
 
     $.ajax({
         url: queryURL,
@@ -60,7 +60,7 @@ function getForecast(x) {
 
     console.log(x)
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + x + "&units=imperial&appid=b0b733324ac9a7ea30d814fbb41a75d7";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + x + "&units=imperial&appid=b0b733324ac9a7ea30d814fbb41a75d7";
 
     $.ajax({
         url: queryURL,
